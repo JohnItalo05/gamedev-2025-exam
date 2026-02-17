@@ -22,7 +22,7 @@ public class Bounce : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -45,7 +45,13 @@ public class Bounce : MonoBehaviour
             collision.collider.gameObject.GetComponent<Renderer>().enabled = false;
 
             // Earn fat points
-            Score(50, collision.collider.gameObject.transform.position);
+            ScoreObject scoreObj = collision.collider.GetComponent<ScoreObject>();
+
+            if (scoreObj != null)
+            {
+                int points = scoreObj.GetPoints();
+                Score(points, collision.transform.position);
+            }
         }
         else if (collision.collider.CompareTag("Floor"))
         {

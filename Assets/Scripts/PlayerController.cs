@@ -3,8 +3,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float sprintForce;
+
     private Rigidbody body;
-    private Animator animator;  
+    private Animator animator;
     private bool isFacingRight = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,7 +22,7 @@ public class PlayerController : MonoBehaviour
         if (isFacingRight && horizontalInput < 0)
         {
             Turn();
-            isFacingRight = false;            
+            isFacingRight = false;
         }
         else if (!isFacingRight && horizontalInput > 0)
         {

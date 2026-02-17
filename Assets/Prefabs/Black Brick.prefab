@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8828029087346004138}
   - component: {fileID: 6830374350908658961}
   - component: {fileID: 7320229704970167417}
+  - component: {fileID: -6405708981826678305}
   m_Layer: 0
   m_Name: Black Brick
   m_TagString: Destructible
@@ -108,3 +109,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-6405708981826678305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997959803097475662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106b62403f8b1024a9ba1536e1aa3710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 50
+  destroyOnHit: 1
