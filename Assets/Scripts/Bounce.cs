@@ -25,7 +25,7 @@ public class Bounce : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         Vector3 bounceDirection = collision.contacts[0].normal;
         if (collision.collider.CompareTag("Player"))
