@@ -3,8 +3,8 @@ using UnityEngine;
 public class ScoreObject : MonoBehaviour
 {
     [Header("Score Settings")]
-    public int points = 50;          // Punti assegnati
-    public bool destroyOnHit = true; // Distrugge l'oggetto dopo la collisione
+    public int points;         
+    public bool destroyOnHit = true; 
 
     public int GetPoints()
     {
